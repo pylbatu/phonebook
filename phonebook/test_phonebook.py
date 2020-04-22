@@ -7,6 +7,9 @@ class PhoneBookTest(unittest.TestCase):
     def setUp(self) -> None:
         self.phonebook = PhoneBook()
 
+    def tearDown(self) -> None:
+        pass
+
     def test_lookup_by_name(self):
         self.phonebook.add('Pyl', '123456')
         number = self.phonebook.lookup('Pyl')
